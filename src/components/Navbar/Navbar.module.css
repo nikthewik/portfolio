@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  height: 50px;
+  width: 100%;
+  padding: 0 40px;
+
+  background-color: var(--clr-bk-2t);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav {
+    max-width: 800px;
+  }
+}

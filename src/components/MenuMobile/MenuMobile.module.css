@@ -1,0 +1,69 @@
+.btn {
+  position: relative;
+  z-index: 30;
+
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn span {
+  display: block;
+  width: 28px;
+  height: 1px;
+
+  border-radius: 5px;
+  background-color: var(--clr-w-1);
+  transition: all 0.2s ease-in-out;
+}
+
+.btnOpen {
+  padding-left: 14px;
+}
+
+.btnOpen .topLine {
+  transform: rotate(45deg);
+  transform-origin: 9px -7.5px;
+}
+
+.btnOpen .midLine {
+  transform: translateX(-75%);
+  opacity: 0;
+}
+
+.btnOpen .btmLine {
+  transform: rotate(-45deg);
+  transform-origin: 8.5px 9px;
+}
+
+.topLine {
+  transform: translateY(7px);
+}
+
+.btmLine {
+  transform: translateY(-7px);
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  width: 50%;
+  height: 100svh;
+
+  background-color: var(--clr-bk-2t);
+  backdrop-filter: blur(20px);
+  /* For Safari */
+  -webkit-backdrop-filter: blur(20px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

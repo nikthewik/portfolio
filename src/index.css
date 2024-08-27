@@ -1,0 +1,55 @@
+@import "@fontsource/poppins/200.css";
+@import "@fontsource/poppins/400.css";
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: var(--clr-bk-1);
+  color: var(--clr-w-1);
+  height: 100svh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+/* COLORS */
+:root {
+
+  /* BLACK */
+  --clr-bk-1: #090909;
+  --clr-bk-2: #010101;
+
+  --clr-bk-1t: #0909097a;
+  --clr-bk-2t: #0101017a;
+
+  /* WHITE */
+  --clr-w-1: #ececec;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */

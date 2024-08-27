@@ -1,0 +1,15 @@
+.logoContainer,
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--clr-w-1);
+}
+
+.logo {
+  width: 35px;
+}
