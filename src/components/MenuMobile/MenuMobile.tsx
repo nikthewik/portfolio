@@ -15,9 +15,31 @@ function MenuMobile(): React.ReactElement {
         className={isOpen ? `${style.btnOpen} ${style.btn}` : style.btn}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className={style.topLine}></span>
-        <span className={style.midLine}></span>
-        <span className={style.btmLine}></span>
+        <motion.span
+          initial={{ rotate: 0, transformOrigin: "50% 50%", y: "-7px" }}
+          animate={{
+            rotate: isOpen ? "45deg" : 0,
+            transformOrigin: isOpen ? "9px -7.5px" : "50% 50%",
+            y: isOpen ? "0px" : "-7px",
+          }}
+          transition={{ ease: "easeInOut", duration: 0.2 }}
+        ></motion.span>
+
+        <motion.span
+          initial={{ opacity: 1, x: 0 }}
+          animate={{ opacity: isOpen ? 0 : 1, x: isOpen ? "-100%" : 0 }}
+          transition={{ ease: "easeInOut", duration: 0.2 }}
+        ></motion.span>
+
+        <motion.span
+          initial={{ rotate: 0, transformOrigin: "50% 50%", y: "7px" }}
+          animate={{
+            rotate: isOpen ? "-45deg" : 0,
+            transformOrigin: isOpen ? "8.5px 9px" : "0% 0%",
+            y: isOpen ? "0px" : "7px",
+          }}
+          transition={{ ease: "easeInOut", duration: 0.2 }}
+        ></motion.span>
       </button>
 
       <AnimatePresence>

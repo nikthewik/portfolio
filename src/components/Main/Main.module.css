@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  height: 100svh;
+  width: 100%;
+  max-width: 860px;
+}
+
+.centered {
+  align-items: center;
+}
+
+.left {
+  align-items: flex-start;
+}
