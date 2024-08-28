@@ -15,13 +15,11 @@
 .color {
   font-size: 26px;
   font-weight: 800;
-  background-image: -webkit-linear-gradient(45deg, #FFD700, #FF8C00, #fe5d5c, #d1528b, #895999, #485683);
+  background-image: linear-gradient(45deg, #FFD700, #FF8C00, #fe5d5c, #d1528b, #895999, #485683);
   background-size: 400%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  animation: changeColor 10s infinite;
 }
 
 .p1,
@@ -36,18 +34,4 @@
 .p2 {
   font-size: 16px;
   font-style: italic;
-}
-
-@keyframes changeColor {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
