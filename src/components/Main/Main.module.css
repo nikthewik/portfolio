@@ -2,19 +2,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 1.875rem;
 
   height: 100svh;
   width: 100%;
-  max-width: 860px;
+  max-width: 53.75rem;
 }
 
-.centered {
-  align-items: center;
-}
-
-.left {
-  align-items: flex-start;
+@media (height <=600px) and (any-pointer: fine) and (orientation: landscape) {
+  .main {
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }

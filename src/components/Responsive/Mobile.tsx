@@ -1,7 +1,7 @@
-// LIBRARIES
+// Libraries
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-// TYPES
+// Types
 import { Children } from "../../types/ChildrenType";
 
 function Mobile({ children }: Children): React.ReactNode {

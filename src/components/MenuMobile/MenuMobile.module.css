@@ -1,9 +1,8 @@
 .btn {
   position: relative;
   z-index: 30;
-
-  width: 40px;
-  height: 30px;
+  width: 2.5rem;
+  height: 1.875rem;
   background-color: transparent;
   cursor: pointer;
 
@@ -15,15 +14,14 @@
 
 .btn span {
   display: block;
-  width: 28px;
+  width: 1.75rem;
   height: 1px;
-
-  border-radius: 5px;
+  border-radius: 0.313rem;
   background-color: var(--clr-w-1);
 }
 
 .btnOpen {
-  padding-left: 14px;
+  padding-left: 0.875rem;
 }
 
 .menu {
@@ -35,8 +33,9 @@
   height: 100svh;
 
   background-color: var(--clr-bk-1t);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background-image: var(--gradient-2t);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
 
   display: flex;
   justify-content: center;

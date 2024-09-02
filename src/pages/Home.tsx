@@ -1,16 +1,15 @@
 // Libraries
-import { Link } from "react-router-dom";
+import React from "react";
 // Components
 import Main from "../components/Main/Main";
 import HomeText from "../components/HomeText/HomeText";
+import HomeBtn from "../components/HomeBtn/HomeBtn";
 
-function Home() {
+function Home(): React.ReactElement {
   return (
-    <Main isCentered={false}>
+    <Main>
       <HomeText />
-      <div>
-        <Link to="/aboutme">ENTER THE VOID</Link>
-      </div>
+      <HomeBtn />
     </Main>
   );
 }

@@ -1,8 +1,8 @@
-// LIBRARIES
+// Libraries
 import React from "react";
 
 type Children = {
-  children: React.ReactNode,
-}
+  children: React.ReactNode;
+};
 
 export type { Children };

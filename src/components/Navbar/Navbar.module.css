@@ -3,9 +3,9 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  height: 56px;
+  height: 3.5rem;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 1.875rem;
   background-color: var(--clr-bk-1);
 }
 
@@ -22,6 +22,12 @@
   }
 
   .nav {
-    max-width: 800px;
+    max-width: 50rem;
+  }
+}
+
+@media (height <=600px) and (any-pointer: fine) and (orientation: landscape) {
+  .navbar {
+    position: relative;
   }
 }

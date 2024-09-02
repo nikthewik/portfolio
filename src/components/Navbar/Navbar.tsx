@@ -1,7 +1,7 @@
 // Libraries
 import React from "react";
-// Style
-import style from "./Navbar.module.css";
+// Styles
+import styles from "./Navbar.module.css";
 // Components
 import Logo from "../Logo/Logo";
 import Mobile from "../Responsive/Mobile";
@@ -11,8 +11,8 @@ import MenuLinks from "../MenuLinks/MenuLinks";
 
 function Navbar(): React.ReactElement {
   return (
-    <header className={style.navbar}>
-      <nav className={style.nav}>
+    <header className={styles.navbar}>
+      <nav className={styles.nav}>
         <Logo />
 
         <Mobile>
