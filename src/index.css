@@ -68,12 +68,12 @@ body {
 
   /* VIOLET */
   --clr-vl-1: #28134c;
+  --clr-vl-1t: #28134c;
 
   /* GRADIENTS */
   --gradient-1: linear-gradient(45deg, #FFD700, #FF8C00, #fe5d5c, #d1528b, #895999, #485683);
   --gradient-2: linear-gradient(180deg, #090909, #28134c);
   --gradient-2t: linear-gradient(180deg, #0909097a, #28134c7a);
-  /* --gradient-2: linear-gradient(180deg, #090909, #1b0d34); */
 
   /* ANIMATIONS */
   --anim-clr1: color 10s linear infinite;
@@ -101,15 +101,15 @@ body {
 
 @keyframes blur {
   0% {
-    filter: blur(8px);
+    filter: blur(0.5rem);
   }
 
   50% {
-    filter: blur(16px);
+    filter: blur(1rem);
   }
 
   100% {
-    filter: blur(8px);
+    filter: blur(0.5rem);
   }
 }
 

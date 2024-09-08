@@ -1,19 +1,25 @@
 // Libraries
-import React, { useState } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useSelector, useDispatch } from "react-redux";
+// Types
+import { RootState, AppDispatch } from "../../store.ts";
+// Slices
+import { toggleMenu } from "../../features/menu/menuSlice";
 // Styles
 import styles from "./MenuMobile.module.css";
 // Components
 import MenuLinks from "../MenuLinks/MenuLinks";
 
 function MenuMobile(): React.ReactElement {
-  const [isOpen, setIsOpen] = useState(false);
+  const isOpen = useSelector((state: RootState) => state.menu.isOpen);
+  const dispatch: AppDispatch = useDispatch();
 
   return (
     <>
       <button
         className={isOpen ? `${styles.btnOpen} ${styles.btn}` : styles.btn}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => dispatch(toggleMenu())}
       >
         <motion.span
           initial={{ rotate: 0, transformOrigin: "50% 50%", y: "-7px" }}
