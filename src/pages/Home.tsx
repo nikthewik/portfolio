@@ -7,7 +7,7 @@ import HomeBtn from "../components/HomeBtn/HomeBtn";
 
 function Home(): React.ReactElement {
   return (
-    <Main>
+    <Main isCenter>
       <HomeText />
       <HomeBtn />
     </Main>

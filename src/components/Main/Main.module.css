@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   margin: 0 auto;
@@ -12,7 +11,23 @@
   max-width: 53.75rem;
 }
 
+.center {
+  justify-content: center;
+}
+
+.noCenter {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
 @media (height <=600px) and (any-pointer: fine) and (orientation: landscape) {
+
+  .noCenter {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
   .main {
     height: 100%;
     padding-top: 3rem;

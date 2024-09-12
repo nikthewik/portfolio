@@ -1,0 +1,23 @@
+.btn {
+  border: 1px solid var(--clr-w-1);
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: transparent;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--clr-w-1);
+
+  cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .btn {
+    font-size: clamp(14px, 1.82vw, 16px);
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////// */
