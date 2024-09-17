@@ -2,10 +2,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 // Reducers
 import menuReducer from "./features/menu/menuSlice.tsx";
+import tagsReducer from "./features/tags/tagsSlice.tsx";
 
 const store = configureStore({
   reducer: {
     menu: menuReducer,
+    tags: tagsReducer,
   },
 });
 

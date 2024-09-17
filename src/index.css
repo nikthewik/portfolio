@@ -31,18 +31,14 @@ select {
 
 /* CSS GLOBAL */
 body {
+  position: relative;
+  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-
-  background-color: var(--clr-bk-1);
-  background-image: var(--gradient-2);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-
   color: var(--clr-w-1);
+  background-color: var(--clr-bk-1);
 }
 
 @media (height <=600px) and (any-pointer: fine) and (orientation: landscape) {
@@ -68,12 +64,31 @@ body {
 
   /* VIOLET */
   --clr-vl-1: #28134c;
-  --clr-vl-1t: #28134c;
+  --clr-vl-1t: #28134c7a;
+
+  /* COLORS FOR GRADIENTS */
+  --clr-grad-1: #FFD700;
+  --clr-grad-2: #FF8C00;
+  --clr-grad-3: #fe5d5c;
+  --clr-grad-4: #d1528b;
+  --clr-grad-5: #895999;
+  --clr-grad-6: #485683;
 
   /* GRADIENTS */
-  --gradient-1: linear-gradient(45deg, #FFD700, #FF8C00, #fe5d5c, #d1528b, #895999, #485683);
-  --gradient-2: linear-gradient(180deg, #090909, #28134c);
-  --gradient-2t: linear-gradient(180deg, #0909097a, #28134c7a);
+  --gradient-1: linear-gradient(45deg, var(--clr-grad-1), var(--clr-grad-2), var(--clr-grad-3), var(--clr-grad-4), var(--clr-grad-5), var(--clr-grad-6));
+  --gradient-2t: linear-gradient(180deg, var(--clr-bk-1t), var(--clr-vl-1t));
+
+  --gradient-planet: radial-gradient(circle at 50% 100%, var(--clr-bk-1), var(--clr-bk-1) 27%, var(--clr-vl-1) 38%, transparent 38%);
+  --gradient-light: radial-gradient(circle at 50% 100%, var(--clr-bk-1),
+      var(--clr-bk-1) 27%,
+      var(--clr-vl-1) 30%, var(--clr-grad-5) 30%, var(--clr-bk-1) 48%);
+
+  --gradient-react: linear-gradient(45deg, #61DAFB, #50c4e8, #3da3d3, #2c8ab8, #19739e, #106487);
+  --gradient-ts: linear-gradient(45deg, #3178C6, #2a6cb1, #235fa0, #1b508b, #174377, #123864);
+  --gradient-js: linear-gradient(45deg, #F7DF1E, #f5c60f, #e0ae0d, #c7970b, #ad8008, #8b6405);
+  --gradient-scss: linear-gradient(45deg, #CF649A, #b95586, #a34573, #8b3661, #74264e, #5e153b);
+  --gradient-htmlcss: linear-gradient(45deg, #f5a623, #e89e1e, #d9901a, #c98315, #b57612, #a2690e);
+  --gradient-pwa: linear-gradient(45deg, #B07BF8, #9E6BE0, #8D5AC8, #7C4AB0, #6A3A99, #573080);
 
   /* ANIMATIONS */
   --anim-clr1: color 10s linear infinite;

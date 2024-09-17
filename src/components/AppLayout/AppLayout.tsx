@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 // Components
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Background from "../Background/Background";
 
 function AppLayout(): React.ReactElement {
   return (
@@ -11,6 +12,7 @@ function AppLayout(): React.ReactElement {
       <Navbar />
       <Outlet />
       <Footer />
+      <Background />
     </>
   );
 }

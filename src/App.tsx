@@ -6,7 +6,7 @@ import AppLayout from "./components/AppLayout/AppLayout";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
-import Hobbies from "./pages/Hobbies";
+import Contacts from "./pages/Contacts";
 
 function App() {
   return (
@@ -17,11 +17,11 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="aboutme" element={<AboutMe />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="hobbies" element={<Hobbies />} />
+          <Route path="contacts" element={<Contacts />} />
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

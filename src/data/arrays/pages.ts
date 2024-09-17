@@ -1,3 +1,3 @@
-  const pages: string[] = ["HOME", "ABOUT ME", "PROJECTS", "HOBBIES"];
+const pages: string[] = ["HOME", "ABOUT ME", "PROJECTS", "CONTACTS"];
 
-  export default pages;
+export default pages;
