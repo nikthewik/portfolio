@@ -4,11 +4,12 @@
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 37.5rem;
 }
 
 .btn {
   border-radius: 0.5rem;
-  font-size: 0.875rem;
+  font-size: clamp(0.70rem, 1.64vw, 0.875rem);
   font-weight: 600;
   color: var(--clr-w-1);
   cursor: pointer;

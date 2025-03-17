@@ -1,45 +1,36 @@
 // Libraries
+import React from "react";
 import { useSelector } from "react-redux";
 // Types
 import { RootState } from "../store";
+import { IProject } from "../types/IProject";
 // Data
 import projects from "../data/arrays/projects";
 // Components
 import Main from "../components/Main/Main";
-import ProjectsText from "../components/ProjectsText/ProjectsText";
+import PageText from "../components/PageText/PageText";
 import ProjectsFilter from "../components/ProjectsFilter/ProjectsFilter";
+import ProjectsCards from "../components/ProjectsCards/ProjectsCards";
 
-function Projects() {
+function Projects(): React.ReactElement {
   const tags = useSelector((state: RootState) => state.tags.tags);
 
-  const filteredProjects =
-    tags.length > 1
-      ? projects.filter((project) =>
+  const filteredProjects: IProject[] =
+    tags.length - 1 === 0
+      ? projects
+      : projects.filter((project) =>
           project.labels.some((tag) => tags.includes(tag))
-        )
-      : projects;
+        );
 
   return (
     <Main>
-      <ProjectsText />
+      <PageText title="Projects">
+        These are some dev projects I have worked on.
+        <br />
+        You can filter them by tag.
+      </PageText>
       <ProjectsFilter />
-
-      <div>
-        {filteredProjects.map((project) => (
-          <div key={project.name}>
-            <p>{project.name}</p>
-            <p>{project.description}</p>
-            <p>{project.labels}</p>
-
-            <a href={project.demo} target="_blank">
-              Live Demo
-            </a>
-            <a href={project.github} target="_blank">
-              GitHub
-            </a>
-          </div>
-        ))}
-      </div>
+      <ProjectsCards projects={filteredProjects} />
     </Main>
   );
 }

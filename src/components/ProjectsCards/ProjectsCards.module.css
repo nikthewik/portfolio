@@ -1,0 +1,166 @@
+.simpleBar {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 37.5rem;
+  padding: 0.7rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: var(--clr-vl-1t);
+  /* border: 1px solid var(--clr-w-1); */
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 11rem;
+  padding: 1rem 1.8rem;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 0 0.05rem 0.05rem var(--clr-w-1t);
+  gap: clamp(1.5rem, 6vw, 3rem);
+}
+
+.img {
+  width: clamp(3rem, 9vw, 5rem);
+  height: clamp(3rem, 9vw, 5rem);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: var(--clr-w-1);
+  border: 1px solid var(--clr-vl-1t);
+  border-radius: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+  height: 100%;
+  color: var(--clr-w-1);
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-size: clamp(0.8rem, 1.64vw, 1rem);
+  font-weight: 600;
+}
+
+.description {
+  font-size: clamp(0.75rem, 1.64vw, 0.875rem);
+  font-weight: 200;
+  width: 95%;
+}
+
+.labelsContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  width: 93%;
+}
+
+.label {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.15rem 0.4rem;
+  font-size: clamp(0.70rem, 1.64vw, 0.875rem);
+  font-weight: 600;
+  color: var(--clr-w-1);
+  text-shadow: 1px 1px 2px var(--clr-bk-2);
+  animation: var(--anim-clr1);
+}
+
+.reactLabel {
+  background: var(--gradient-react);
+  background-size: 200%;
+}
+
+.tsLabel {
+  background: var(--gradient-ts);
+  background-size: 200%;
+}
+
+.jsLabel {
+  background: var(--gradient-js);
+  background-size: 200%;
+}
+
+.scssLabel {
+  background: var(--gradient-scss);
+  background-size: 200%;
+}
+
+.htmlCssLabel {
+  background: var(--gradient-htmlcss);
+  background-size: 200%;
+}
+
+.pwaLabel {
+  background: var(--gradient-pwa);
+  background-size: 200%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.links>a {
+  color: var(--clr-w-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: var(--clr-w-1);
+  font-size: clamp(1.3rem, 2.8vw, 1.5rem);
+  cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
+  .card {
+    height: 11.6rem;
+    gap: 0;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .description {
+    width: 86%;
+  }
+}
+
+@media (min-width: 768px) {
+  .label {
+    font-size: clamp(0.875rem, 1.82vw, 0.9rem);
+  }
+
+  .description {
+    width: 94%;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////// */

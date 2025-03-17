@@ -11,7 +11,7 @@ const tagsSlice = createSlice({
   reducers: {
     toggleTag: (state, action) => {
       if (state.tags.includes(action.payload)) {
-        state.tags = state.tags.filter((tag) => tag !== action.payload);
+        state.tags = [...state.tags.filter((tag) => tag !== action.payload)];
       } else {
         state.tags = [...state.tags, action.payload];
       }

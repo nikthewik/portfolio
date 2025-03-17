@@ -5,6 +5,7 @@ export interface IProject {
   params: string;
   labels: string[];
   imgName: string;
+  alt: string;
   demo: string;
   github: string;
 }
