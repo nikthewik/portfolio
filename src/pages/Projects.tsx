@@ -1,6 +1,7 @@
 // Libraries
 import React from "react";
 import { useSelector } from "react-redux";
+import { Helmet } from "react-helmet";
 // Types
 import { RootState } from "../store";
 import { IProject } from "../types/IProject";
@@ -23,15 +24,20 @@ function Projects(): React.ReactElement {
         );
 
   return (
-    <Main>
-      <PageText title="Projects">
-        These are some dev projects I have worked on.
-        <br />
-        You can filter them by tag.
-      </PageText>
-      <ProjectsFilter />
-      <ProjectsCards projects={filteredProjects} />
-    </Main>
+    <>
+      <Helmet>
+        <title>Projects | NikTheWik</title>
+      </Helmet>
+      <Main>
+        <PageText title="Projects">
+          These are some dev projects I have worked on.
+          <br />
+          You can filter them by tag.
+        </PageText>
+        <ProjectsFilter />
+        <ProjectsCards projects={filteredProjects} />
+      </Main>
+    </>
   );
 }
 

@@ -1,6 +1,5 @@
 // Libraries
 import React from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 // Types
@@ -9,6 +8,8 @@ import { AppDispatch } from "../../store.ts";
 import { closeMenu } from "../../features/menu/menuSlice";
 // Styles
 import styles from "./HomeText.module.css";
+// Components
+import MultiColoredText from "../MultiColoredText/MultiColoredText.tsx";
 
 function HomeText(): React.ReactElement {
   const dispatch: AppDispatch = useDispatch();
@@ -18,11 +19,9 @@ function HomeText(): React.ReactElement {
       <p className={styles.title}>Hi there, Humans!</p>
       <p className={`${styles.title} ${styles.marginBtm}`}>
         I'm&nbsp;
-        <motion.span
-          className={styles.colorTitle}
-          animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
-          transition={{ ease: "linear", duration: 10, repeat: Infinity }}
-        >{`<NikTheWik/>`}</motion.span>
+        <MultiColoredText style={styles.colorTitle}>
+          {`<NikTheWik />`}
+        </MultiColoredText>
       </p>
 
       <p className={styles.job}>Creative Developer</p>

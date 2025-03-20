@@ -1,0 +1,37 @@
+.contactContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 4rem;
+}
+
+.subtitle {
+	font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+	font-weight: 600;
+}
+
+.linksContainer {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.linkContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.linkContainer>span {
+	font-size: clamp(1rem, 2.2vw, 1.2rem);
+	font-weight: 200;
+}
+
+.linkContainer>a {
+	font-size: 2rem;
+	text-decoration: none;
+	color: var(--clr-w-1);
+}

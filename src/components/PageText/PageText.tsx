@@ -9,7 +9,9 @@ function PageText({ title, children }: PageTextType): React.ReactNode {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{title}</h1>
-      <p className={styles.description}>{children}</p>
+      <p className={styles.description}>
+        <span className={styles.spanFlex}>{children}</span>
+      </p>
     </div>
   );
 }

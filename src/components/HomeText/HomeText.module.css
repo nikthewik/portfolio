@@ -17,11 +17,6 @@
 
 .colorTitle {
   font-weight: 800;
-  background-image: var(--gradient-1);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .job,

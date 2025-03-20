@@ -1,11 +1,11 @@
 // Libraries
 import React from "react";
-import SimpleBar from "simplebar-react";
 import { HiOutlineRocketLaunch, HiOutlineCommandLine } from "react-icons/hi2";
 // Types
 import { IProject } from "../../types/IProject";
+// Components
+import Scrollbar from "../Scrollbar/Scrollbar";
 // Styles
-import "simplebar-react/dist/simplebar.min.css";
 import styles from "./ProjectsCards.module.css";
 
 function ProjectsCards({
@@ -14,7 +14,7 @@ function ProjectsCards({
   projects: IProject[];
 }): React.ReactElement {
   return (
-    <SimpleBar className={styles.simpleBar}>
+    <Scrollbar>
       <div className={styles.container}>
         {projects.map((project) => (
           <div key={project.name} className={styles.card}>
@@ -59,7 +59,7 @@ function ProjectsCards({
           </div>
         ))}
       </div>
-    </SimpleBar>
+    </Scrollbar>
   );
 }
 
