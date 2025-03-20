@@ -2,7 +2,7 @@
 
 This is my portfolio site to show my skills and projects as a developer.
 
-![Portfolio preview](https://raw.githubusercontent.com/nikthewik/portfolio/main/src/assets/img/preview-portfolio.jpg)
+![Portfolio preview](src/assets/img/preview-portfolio.jpg)
 
 ## Tables of Contents
 
